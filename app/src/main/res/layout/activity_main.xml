@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Name"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+
+        ></TextView>
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTxt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+
+
+
+        ></EditText>
+
+
+    <TextView
+        android:id="@+id/heightTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameField"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+
+        android:text="Height"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/heightField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightTxt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+
+
+
+        ></EditText>
+    <TextView
+        android:id="@+id/weightTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightField"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:text="Weight"
+        ></TextView>
+    <EditText
+        android:id="@+id/weightField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightTxt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderTxt"
+        android:layout_below="@id/weightField"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:text="gender"
+        ></TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@id/genderTxt"
+        android:entries="@array/gender"
+        android:id="@+id/spn"
+        ></Spinner>
+
+    <CheckBox
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:id="@+id/chkRemember"
+        android:layout_below="@id/spn"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+
+        ></CheckBox>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:layout_below="@+id/chkRemember"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:onClick="saveOnClick"
+        android:id="@+id/buttonsave"
+
+
+        ></Button>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Continue"
+    android:layout_below="@+id/buttonsave"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="80dp"
+    android:onClick="continueOnClick"
+
+
+    ></Button>
+
+
+</RelativeLayout>
